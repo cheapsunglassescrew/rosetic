@@ -10,7 +10,7 @@ namespace Components {
     update(tic: number): void {
     }
 
-    collide(position = this.gameObject.position, velocity = this.gameObject.velocity, dimensions = this.gameObject.dimensions): void {
+    collideWithSolid(position = this.gameObject.position, velocity = this.gameObject.velocity, dimensions = this.gameObject.dimensions): void {
       if (velocity.x < 0 && this.leftCollision(position, velocity, dimensions)) {
         
         while (velocity.x < -1 && this.leftCollision(position, velocity, dimensions)) {

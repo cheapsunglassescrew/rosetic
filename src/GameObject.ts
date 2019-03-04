@@ -8,7 +8,7 @@ abstract class GameObject extends RootGameObject {
   }
 
   onUpdate(tic: number): void { }
-  onHit(hitter: IGameObject): void { }
+  onCollision(collidingObject: IGameObject): void { }
   onDestroy(): void { }
 
   update(tic: number): void {
@@ -29,7 +29,7 @@ abstract class GameObject extends RootGameObject {
 
     super.update(tic);
     if (this.components.hasComponent(ComponentFlags.Solid)) {
-      this.components.solid.collide();
+      this.components.solid.collideWithSolid();
     }
     this.updatePosition();
   }

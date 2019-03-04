@@ -13,7 +13,7 @@ interface IGameObject {
   direction: Vector2;
 
   destroy(): void;
-  onHit(hitter: IGameObject): void;
+  onCollision(collidingObject: IGameObject): void;
   update(tic: number): void;
   getGlobalPosition(): Vector2;
   removeChild(child: IGameObject): void;

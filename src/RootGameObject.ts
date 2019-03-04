@@ -21,7 +21,7 @@ class RootGameObject implements IGameObject {
     this.id = id;
     this.components = new ComponentManager(this, componentFlags);
   }
-  onHit(hitter: IGameObject): void {
+  onCollision(hitter: IGameObject): void {
     throw new Error("Method not implemented.");
   }
   getGlobalPosition(): Vector2 {
