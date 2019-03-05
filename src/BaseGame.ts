@@ -1,3 +1,4 @@
+/// <reference path="./ComponentFlags.ts" />
 abstract class BaseGame {
   readonly api: IApi;
   readonly root: RootGameObject;

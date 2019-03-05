@@ -1,3 +1,6 @@
+/// <reference path="./Vector2.ts" />
+/// <reference path="./ComponentManager.ts" />
+
 class RootGameObject implements IGameObject {
   readonly id: string;
   parent: IGameObject;

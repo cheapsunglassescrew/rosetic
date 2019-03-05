@@ -1,3 +1,5 @@
+/// <reference path="./Components/Visible.ts" />
+
 class ComponentManager {
   readonly componentFlags: ComponentFlags = 0;
   readonly visible: Components.Visible;
