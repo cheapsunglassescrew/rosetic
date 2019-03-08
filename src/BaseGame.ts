@@ -3,7 +3,7 @@ abstract class BaseGame {
   readonly api: IApi;
   readonly root: RootGameObject;
   private _gameObjectCollections: { [id: string]: IGameObject[] };
-  private currentLevel: Level;
+  private currentLevel: Scene;
   hiScore: number = 0;
   mapOffset: Vector2;
   gravity: number = 0;
@@ -21,7 +21,7 @@ abstract class BaseGame {
     //this.performanceMonitor = new PerformanceMonitor(this);
   }
 
-  setCurrentLevel(level: Level): void {
+  setCurrentLevel(level: Scene): void {
     level.init();
     this.currentLevel = level;
   }

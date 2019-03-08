@@ -1,4 +1,4 @@
-abstract class Level {
+abstract class Scene {
   readonly game: BaseGame;
   constructor(game: BaseGame) {
     this.game = game;
